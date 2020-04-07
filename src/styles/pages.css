@@ -110,6 +110,10 @@ section .timeline-panel .usedSkill {
   grid-column: 1 / 5;
 }
 
+section.project > .detail {
+  grid-column: 2 / 4;
+}
+
 section .timeline-panel .detail {
   grid-row: 3/4;
   grid-column: 1 / 4;
@@ -124,10 +128,12 @@ section .timeline-panel .show {
   justify-content: center;
   margin-left: 20px;
 }
-
+/* 
 section .timeline-panel .show img {
-  height: 150px;
-}
+  /* height: 150px; */
+  /* width: 50%; */
+} 
+*/
 
 section .timeline-panel .show a {
   margin-bottom: 10px;
@@ -148,7 +154,7 @@ section .timeline-panel .pomodoro {
 section .timeline-panel .pomodoro img {
   /* height: 200px; */
   margin-top: 10px;
-  width: 50%;
+  /* width: 50%; */
 }
 
 section .timeline-panel .pomodoro.show {
@@ -164,31 +170,6 @@ section .timeline-panel .pomodoro.show {
 section .timeline-panel .pomodoro.show > a {
   margin-left: 5px;
 }
-
-/* section .timeline-panel .introduction {
-  grid-row: 1;
-  grid-column: 4;
-  color: #666;
-} */
-/* 
-section .timeline-panel .detail {
-  grid-row: 3;
-  grid-column: 1/3;
-  margin-top: 10px;
-}
-
-section .timeline-panel .show {
-  grid-row: 3;
-  grid-column: 3 / 5;
-  text-align: center;
-}
-
-section .timeline-panel .show img {
-  height: 150px;
-  margin-left: 40px;
-}
-
- */
 
 section .education {
   display: grid;
@@ -219,29 +200,14 @@ section .education .introduction {
   margin-left: 20px;
 }
 
-section.openSource .detail {
-  width: 100%;
+section .timeline-panel .usedSkill h4 {
   grid-row: 2;
-  grid-column: 1/5;
+  grid-column: 1 / 4;
+  font-size: 1.2em;
 }
 
-section.openSource img {
-  width: 100%;
-  grid-row: 2;
-  grid-column: 1/5;
-}
-
-section.openSource h3 {
-  grid-row: 1;
-  grid-column: 1/4;
-  padding-bottom: 10px;
-}
-
-section.openSource a {
-  grid-row: 1;
-  grid-column: 4/5;
-}
-
-section.openSource ul {
-  padding-bottom: 10px;
+section .timeline-panel .usedSkill .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

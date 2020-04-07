@@ -1,297 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>我的简历</title>
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
-    />
-    <link
-      rel="stylesheet"
-      href="//at.alicdn.com/t/font_1729448_p2260vejewf.css"
-    />
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/layout.css" />
-    <link rel="stylesheet" href="./styles/common.css" />
-    <link rel="stylesheet" href="./styles/pages.css" />
-  </head>
-  <body>
-    <header>
-      <figure>
-        <img src="./images/square-photo1.jpg" alt="头像" />
-        <figcaption>周啟尧</figcaption>
-        <p>应聘前端工程师</p>
-      </figure>
-    </header>
-    <main>
-      <section>
-        <span class="iconfont icon-projects"></span>
-        <h2>项目经历</h2>
-        <hr />
-        <div class="detail">
 
-          <div class="timeline-panel">
-            <h3>—— 小财迷记账</h3>
-            <div class="usedSkill">
+<head>
+  <meta charset="UTF-8" />
+  <title>我的简历</title>
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
+  <style media="print">
+    #page2,
+    #page3 {
+      page-break-before: always;
+      margin-top: 20px;
+    }
+  </style>
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1729448_p2260vejewf.css" />
+  <link rel="stylesheet" href="./styles/reset.css" />
+  <link rel="stylesheet" href="./styles/common.css" />
+  <link rel="stylesheet" href="./styles/pages.css" />
+  <link rel="stylesheet" href="./styles/layout.css" />
+</head>
+
+<body>
+  <header>
+    <figure>
+      <img src="./images/square-photo1.jpg" alt="头像" />
+      <figcaption>周啟尧</figcaption>
+      <p>应聘前端工程师</p>
+    </figure>
+  </header>
+  <main>
+    <section class="project">
+      <span class="iconfont icon-projects"></span>
+      <h2>项目经历</h2>
+      <hr />
+      <div class="detail">
+
+        <div class="timeline-panel">
+          <h3>—— 小财迷记账</h3>
+          <div class="usedSkill">
+            <div class="header">
               <h4>使用技术</h4>
-              <p>
-                Vue，Vue Router，Vuex，<strong>TypeScript</strong>，SCSS，LocalStorage，dayjs
-              </p>
+              <div class="a-wrapper">
+                <a href="https://github.com/CFCode-git/moneygrubber-test-1">源码链接</a>
+                <a href="https://chow1027.xyz/moneygrubber-1-website/#/money">扫码查看</a>  
+              </div>
             </div>
-            <div class="detail">
-              <h4>项目概述</h4>
-              <ul>
-                <li>
-                  使用Vue全家桶实现的一款单页面<strong>移动端</strong>记账应用。
-                </li>
-                <li>
-                  使用<strong>VueRouter</strong>将应用划分为记账，标签，统计三个分页面，实现了记账信息保存，标签管理，数据统计展示等主要功能。
-                </li>
-                <li>
-                  使用<strong>Vuex+LocalStorage</strong>实现状态管理，将记账信息和标签信息存储在LocalStorage中.
-                </li>
-            </div>
-            <div class="show">
-              <p>
-                <a href="https://github.com/CFCode-git/moneygrubber-test-1">源码链接</a> 
-                <a href="https://chow1027.xyz/moneygrubber-1-website/#/money">扫码查看</a>   
-              </p>  
-              <img src="./images/monry.png" alt="扫一扫二维码直达体验!" />
- 
-            </div>
-          </div>
-
-          <div class="timeline-panel">
-            <h3>—— Pomodoro番茄钟</h3>
-            <div class="usedSkill">
-              <h4>使用技术</h4>
-              <p>
-                React，Redux，React Redux，React Router，TypeScript，SCSS，
-              SVG绘制，axios，antd，dayjs，lodash
-              </p>
-            </div>
-            <div class="detail">
-              <h4>项目描述</h4>
-              <ul>
-                <li>
-                  使用<strong>React + React Router + Redux + axios</strong>实现注册/登录/跳转页面的功能。
-                </li>
-                <li>
-                  使用SVG绘制折线图。
-                </li>
-                <li>
-                  使用<strong>Hooks API</strong>完成倒计时功能模块。
-                </li>
-                <li>详细的历史记录，并可对记录进行修改，恢复和删除。</li>
-              </ul>
-            </div>
-            <div class="pomodoro show">
-                <a href="https://github.com/CFCode-git/Pomodoro-Technique">源码链接</a> 
-                <a href="http://chow1027.xyz/Pomodoro-Technique/">项目预览</a>   
-            </div>
-            <div class="pomodoro">
-              <img src="./images/pomodoro1.png" alt="展示效果1" />
-              <img src="./images/pomodoro2.png" alt="展示效果2" />
-            </div>
-          </div>
-
-          <div class="timeline-panel">
-            <h3>—— 极简PPT</h3>
-            <div class="usedSkill">
-              <h4>使用技术</h4>
-              <p>
-                是以reveal.js为基础，使用原生JS添加了一些小功能制作的一款演讲工具。
-              </p>
-            </div>
-            <div class="detail">
-              <h4>功能描述</h4>
-              <p>
-                一款使用Markdown语法快速制作PPT的在线应用。
-                拥抱极简主义，让工作更高效。
-              </p>
-              <h4>主要技术点：</h4>
-              <ul>
-                <li>将Markdown转化成PPT上的文字。</li>
-                <li>
-                  使用<strong>leancloud</strong>增强编辑器的<strong>上传图片</strong>功能。
-                </li>
-              </ul>
-            </div>
-            <div class="pomodoro show">
-                <a href="https://github.com/CFCode-git/OneSlide">源码链接</a> 
-                <a href="https://chow1027.xyz/OneSlide/demo.html#/">项目预览</a>   
-            </div>
-            <div class="pomodoro">
-              <img src="./images/oneSlide1.png" alt="展示效果1" />
-              <img src="./images/oneSlide2.png" alt="展示效果2" />
-            </div>
-          </div>
-
-      </section>
-      <section class="openSource">
-        <span class="iconfont icon-openSource"></span>
-        <h2>开源项目</h2>
-        <hr />
-        <div class="detail">
-          <div class="timeline-panel">
-            <h3>—— 画一只皮卡丘</h3>
-
-            <div class="detail">
-              <img src="./images/pikachu.png" alt="展示效果">
-              <h4>项目概述</h4>
-              <ul>
-                <li>学习CSS3动画的时候做的一个小作品。</li>
-              </ul>
-              <!-- <h4>主要工作/思路和经验总结</h4> -->
-              <p class="introduction">
-                <a href="https://chow1027.xyz/cartoon-pikachu-1/src/test.html">预览地址</a>
-                <a href="https://github.com/CFCode-git/cartoon-pikachu-1">源码链接</a>
-              </p>
-            </div>
-          </div>
-          <div class="timeline-panel">
-            <h3>—— 前端导航网站</h3>
-            <div class="detail">
-              <img src="./images/nav.png" alt="展示效果">
-              <h4>项目概述</h4>
-              <ul>
-                <li>使用jQuery制作的导航网站。</li>
-                <li>
-                  添加网址时获取首字母到快捷方式，敲击快捷方式对应的字母前往对应的网址。
-                </li>
-              </ul>
-              <p class="introduction">
-                <a href="https://chow1027.xyz/nav-1/dist/index.html">预览地址</a>
-                <a href="https://github.com/CFCode-git/nav-1">源码链接</a>
-              </p>
-            </div>
-          </div>
-          <div class="timeline-panel">
-            <h3>—— 简易画板</h3>
-            
-            <div class="detail">
-              <h4>项目概述</h4>
-              <ul>
-                <li>学习canvas的时候制作的一个小作品</li>
-                <li>
-                  目前仅支持画画功能，之后会陆续添加橡皮擦、选色、画笔大小等常用功能。
-                </li>
-              </ul>
-              <p class="introduction">
-                <a href="http://chow1027.xyz/canvas-drawingboard/">预览地址</a>
-                <a href="https://github.com/CFCode-git/canvas-drawingboard">源码链接</a>
-              </p>
-              <!-- <h4>主要工作/思路和经验总结</h4> -->
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <aside>
-      <section>
-        <span class="iconfont icon-message"></span>
-        <h2>基本信息</h2>
-        <hr />
-        <div class="detail">
-          <div class="icon-list">
-            <span class="iconfont icon-education2"></span>
-            24岁
-          </div>
-          <div class="icon-list">
-            <span class="iconfont icon-phone"></span>
-            18024148185
-          </div>
-          <div class="icon-list">
-            <span class="iconfont icon-wechat"></span>
-            wojiaozhougong
-          </div>
-          <div class="icon-list">
-            <span class="iconfont icon-email"></span>
-            435184766@qq.com
-          </div>
-          <div class="icon-list">
-            <span class="iconfont icon-github"></span>
-            https://github.com/CFCode-git
-          </div>
-          <div class="icon-list">
-            <span class="iconfont icon-blog"></span>
-            https://chow1027.xyz/
-          </div>
-        </div>
-      </section>
-      <section>
-        <span class="iconfont icon-education"></span>
-        <h2>教育经历</h2>
-        <hr />
-        <div class="detail">
-          <div class="timeline-panel education">
-            <div class="date">2014年9月-2018年7月</div>
-            <h3>广东工业大学</h3>
-            <p class="introduction">
-              测绘工程 本科
+            <p>
+              Vue，Vue Router，Vuex，<strong>TypeScript</strong>，SCSS，LocalStorage，dayjs
             </p>
           </div>
+          <div class="detail">
+            <h4>项目概述</h4>
+            <ul>
+              <li>
+                使用Vue全家桶实现的一款单页面<strong>移动端</strong>记账应用。
+              </li>
+              <li>
+                使用<strong>VueRouter</strong>将应用划分为记账，标签，统计三个分页面，实现了记账信息保存，标签管理，数据统计展示等主要功能。
+              </li>
+              <li>
+                使用<strong>Vuex+LocalStorage</strong>实现状态管理，将记账信息和标签信息存储在LocalStorage中.
+              </li>
+          </div>
+          <div class="show">
+            <img src="./images/monry.png" alt="扫一扫二维码直达体验!" />
+          </div>
         </div>
-      </section>
-      <section class="skills">
-        <span class="iconfont icon-skills"></span>
-        <h2>掌握技能</h2>
-        <hr />
-        <div class="detail">
-          <ul>
-            <li>熟悉页面制作技巧，能将设计稿<strong>完美还原</strong>成页面</li>
-            <li>熟练使用HTML5标签编写语义化的页面</li>
-            <li>熟练使用CSS/SCSS，文档流，盒模型，flex布局</li>
-            <li>
-              掌握JavaScript，ES6，DOM操作，AJAX，跨域，闭包，原型链，this的使用和概念
-            </li>
-            <li>
-              熟悉ES6，包括let/Promise/await/析构赋值等
-            </li>
-            <li>
-              熟悉<strong>前后端分离</strong>技术，包括AJAX，跨域，前端路由，Cookie，Session等
-            </li>
-            <li>
-              熟练掌握<strong>Vue全家桶</strong>的使用，包括Vue-cli、VueRouter、Vuex等
-            </li>
-            <li>
-              熟练掌握<strong>React全家桶</strong>的使用，包括create-react-app、ReactRouter、Redux等
-            </li>
 
-            <li>
-              了解TypeScript，我的项目就是TS实现的
-            </li>
-            <li>了解<strong>Webpack的配置和优化</strong></li>
-          </ul>
+        <div class="timeline-panel">
+          <h3>—— Pomodoro番茄钟</h3>
+          <div class="usedSkill">
+            <div class="header">
+              <h4>使用技术</h4>
+              <div class="a-wrapper">
+                <a href="https://github.com/CFCode-git/Pomodoro-Technique">源码链接</a>
+                <a href="http://chow1027.xyz/Pomodoro-Technique/">项目预览</a>    
+              </div>
+            </div>
+            <p>
+              React，Redux，React Redux，React Router，TypeScript，SCSS，
+              SVG绘制，axios，antd，dayjs，lodash
+            </p>
+          </div>
+          <div class="detail">
+            <h4>项目描述</h4>
+            <ul>
+              <li>
+                使用<strong>React + React Router + Redux + axios</strong>实现注册/登录/跳转页面的功能。
+              </li>
+              <li>
+                使用SVG绘制折线图。
+              </li>
+              <li>
+                使用<strong>Hooks API</strong>完成倒计时功能模块。
+              </li>
+              <li>详细的历史记录，并可对记录进行修改，恢复和删除。</li>
+            </ul>
+          </div>
+          <div class="pomodoro">
+            <img src="./images/pomodoro1.png" alt="展示效果1" />
+            <img src="./images/pomodoro2.png" alt="展示效果2" />
+          </div>
         </div>
-      </section>
-      <section>
-        <span class="iconfont icon-map"></span>
-        <h2>技能图谱</h2>
-        <hr />
-        <div class="detail">
-          <dl class="skill-bar">
-            <dt>JavaScript</dt>
-            <dd>
-              <div style="width:80%"></div>
-            </dd>
-            <dt>CSS3</dt>
-            <dd>
-              <div style="width:70%"></div>
-            </dd>
-            <dt>Vue</dt>
-            <dd>
-              <div style="width:75%"></div>
-            </dd>
-            <dt>React</dt>
-            <dd>
-              <div style="width:70%"></div>
-            </dd>
-          </dl>
+
+
+        <div class="timeline-panel">
+          <h3>—— 极简PPT</h3>
+          <div class="usedSkill">
+            <div class="header">
+              <h4>使用技术</h4>
+              <div class="a-wrapper">
+                <a href="https://github.com/CFCode-git/OneSlide">源码链接</a>
+                <a href="https://chow1027.xyz/OneSlide/demo.html#/">项目预览</a>    
+              </div>
+            </div>
+         
+            <p>
+              是以reveal.js为基础，使用原生JS添加了一些小功能制作的一款演讲工具。
+            </p>
+          </div>
+          <div class="detail">
+            <h4>功能描述</h4>
+            <p>
+              一款使用Markdown语法快速制作PPT的在线应用。
+              拥抱极简主义，让工作更高效。
+            </p>
+            <h4>主要技术点：</h4>
+            <ul>
+              <li>将Markdown转化成PPT上的文字。</li>
+              <li>
+                使用<strong>leancloud</strong>增强编辑器的<strong>上传图片</strong>功能。
+              </li>
+            </ul>
+          </div>
+      
+          <div class="pomodoro">
+            <img src="./images/oneSlide1.png" alt="展示效果1" />
+            <img src="./images/oneSlide2.png" alt="展示效果2" />
+          </div>
         </div>
-      </section>
-    </aside>
-    <script src="main.js"></script>
-  </body>
+
+    </section>
+    <section class="openSource">
+      <span class="iconfont icon-openSource"></span>
+      <h2>开源项目</h2>
+      <hr />
+      <div class="detail">
+
+        <div class="timeline-panel">
+          <h3>—— 画一只皮卡丘</h3>
+          <div class="usedSkill">
+            <div class="header">
+              <h4>项目概述</h4>
+              <div class="a-wrapper">
+                <a href="https://chow1027.xyz/cartoon-pikachu-1/src/test.html">预览地址</a>
+                <a href="https://github.com/CFCode-git/cartoon-pikachu-1">源码链接</a>  
+              </div>
+            </div>
+            <p>
+              学习CSS3动画的时候做的一个小作品。
+            </p>
+          </div>
+          <div class="detail">
+
+          </div>
+          <div class="pomodoro">
+            <img src="./images/pikachu.png" alt="展示效果">
+          </div>
+        </div>
+
+        <div class="timeline-panel">
+          <h3>—— 前端导航网站</h3>
+          <div class="usedSkill">
+            <div class="header">
+              <h4>项目概述</h4>
+              <div class="a-wrapper">
+                <a href="https://chow1027.xyz/nav-1/dist/index.html">预览地址</a>
+                <a href="https://github.com/CFCode-git/nav-1">源码链接</a>    
+              </div>
+            </div>
+            <p>
+              使用jQuery制作的导航网站。
+              添加网址时获取首字母到快捷方式，敲击快捷方式对应的字母前往对应的网址。
+            </p>
+          </div>
+          <div class="pomodoro">
+            <img src="./images/nav.png" alt="展示效果">
+          </div>
+        </div>
+
+
+
+
+        <div class="timeline-panel">
+          <h3>—— 简易画板</h3>
+          <div class="usedSkill">
+            <div class="header">
+              <h4>项目概述</h4>
+              <div class="a-wrapper">
+                <a href="http://chow1027.xyz/canvas-drawingboard/">预览地址</a>
+                <a href="https://github.com/CFCode-git/canvas-drawingboard">源码链接</a>    
+              </div>
+            </div>
+            <p>
+              学习canvas的时候制作的一个小作品。
+              目前仅支持画画功能，之后会陆续添加橡皮擦、选色、画笔大小等常用功能。
+            </p>
+          </div>
+          <div class="pomodoro show">
+          </div>
+          <div class="pomodoro"> </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <aside>
+    <section>
+      <span class="iconfont icon-message"></span>
+      <h2>基本信息</h2>
+      <hr />
+      <div class="detail">
+        <div class="icon-list">
+          <span class="iconfont icon-education2"></span>
+          24岁
+        </div>
+        <div class="icon-list">
+          <span class="iconfont icon-phone"></span>
+          18024148185
+        </div>
+        <div class="icon-list">
+          <span class="iconfont icon-wechat"></span>
+          wojiaozhougong
+        </div>
+        <div class="icon-list">
+          <span class="iconfont icon-email"></span>
+          435184766@qq.com
+        </div>
+        <div class="icon-list">
+          <span class="iconfont icon-github"></span>
+          https://github.com/CFCode-git
+        </div>
+        <div class="icon-list">
+          <span class="iconfont icon-blog"></span>
+          https://chow1027.xyz/
+        </div>
+      </div>
+    </section>
+    <section>
+      <span class="iconfont icon-education"></span>
+      <h2>教育经历</h2>
+      <hr />
+      <div class="detail">
+        <div class="timeline-panel education">
+          <div class="date">2014年9月-2018年7月</div>
+          <h3>广东工业大学</h3>
+          <p class="introduction">
+            测绘工程 本科
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="skills">
+      <span class="iconfont icon-skills"></span>
+      <h2>掌握技能</h2>
+      <hr />
+      <div class="detail">
+        <ul>
+          <li>熟悉页面制作技巧，能将设计稿完美还原成页面</li>
+          <li>熟练使用HTML5标签编写语义化的页面</li>
+          <li>熟练使用CSS/SCSS，文档流，盒模型，flex布局</li>
+          <li>掌握JavaScript，ES6，DOM操作，AJAX，跨域，闭包，原型链，this的使用和概念</li>
+          <li>熟悉ES6，包括let/Promise/await/析构赋值等</li>
+          <li>熟悉<strong>前后端分离</strong>技术，包括AJAX，跨域，前端路由，Cookie，Session等</li>
+          <li>熟练掌握<strong>Vue全家桶</strong>的使用，包括Vue-cli、VueRouter、Vuex等</li>
+          <li>熟练掌握<strong>React全家桶</strong>的使用，包括create-react-app、ReactRouter、Redux等</li>
+          <li>了解TypeScript，我的项目就是TS实现的</li>
+          <li>了解<strong>Webpack的配置和优化</strong></li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <span class="iconfont icon-map"></span>
+      <h2>技能图谱</h2>
+      <hr />
+      <div class="detail">
+        <dl class="skill-bar">
+          <dt>JavaScript</dt>
+          <dd>
+            <div style="width:80%"></div>
+          </dd>
+          <dt>CSS3</dt>
+          <dd>
+            <div style="width:70%"></div>
+          </dd>
+          <dt>Vue</dt>
+          <dd>
+            <div style="width:75%"></div>
+          </dd>
+          <dt>React</dt>
+          <dd>
+            <div style="width:70%"></div>
+          </dd>
+        </dl>
+      </div>
+    </section>
+  </aside>
+  <script src="main.js"></script>
+</body>
+
 </html>

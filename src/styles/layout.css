@@ -20,6 +20,9 @@ aside {
   grid-column: 2 / 3;
   grid-row: 2;
 }
+img{
+  width:50%;
+}
 
 /* @media (max-width: 768px) {
   body {
@@ -44,4 +47,36 @@ aside {
     grid-column: 1;
     grid-row: 3;
   }
+  img{
+    width:50%;
+  }
+  section.project > .detail {
+    grid-column: 1 / 4;
+  }
+
+  section.openSource > .detail {
+    grid-column: 1 / 4;
+  }
+ 
+  section .timeline-panel {
+    display: grid;
+    grid: auto auto auto auto / 120px  auto;
+    align-items: center;
+    margin-top: 16px;
+  }
+
+  section .timeline-panel .show img{
+    width:100%;
+  }
+
+  section .timeline-panel .pomodoro{
+    display: flex;
+    flex-direction: column;
+  }
+
+  section .timeline-panel .pomodoro img{
+    width:100%;
+  }
+
 }
+
