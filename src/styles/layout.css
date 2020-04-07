@@ -72,10 +72,24 @@ img{
   section .timeline-panel .pomodoro{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   section .timeline-panel .pomodoro img{
     width:100%;
+  }
+  section .education {
+    display: grid;
+    grid: auto auto auto / auto;
+    align-items: center;
+    margin-top: 16px;
+  }
+  
+  section .education .date {
+    grid-row: 1;
+    grid-column: 1;
+    margin-bottom: 10px;
   }
 
 }

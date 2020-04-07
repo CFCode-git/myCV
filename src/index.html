@@ -6,18 +6,61 @@
   <title>我的简历</title>
   <meta name="viewport"
     content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1729448_p2260vejewf.css" />
+  <link rel="stylesheet" href="./styles/reset.css" />
+  <link rel="stylesheet" href="./styles/common.css" />
+  <link rel="stylesheet" href="./styles/pages.css" />
+  <link rel="stylesheet" href="./styles/layout.css" />
   <style media="print">
     #page2,
     #page3 {
       page-break-before: always;
       margin-top: 20px;
     }
+
+    #page4 {
+      display: none;
+    }
+
+    section.project>.detail {
+      grid-column: 2 / 4;
+    }
+
+    section.openSource>.detail {
+      grid-column: 2 / 4;
+    }
+
+    section .timeline-panel .show img {
+      width: 80%;
+    }
+
+    section .timeline-panel .pomodoro {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    section .timeline-panel .pomodoro img {
+      width: 50%;
+    }
+
+    section.openSource .timeline-panel .pomodoro img {
+      width: 40%;
+    }
+
+    section .education {
+      display: grid;
+      grid: auto auto auto / auto;
+      align-items: center;
+      margin-top: 16px;
+    }
+
+    section .education .date {
+      grid-row: 1;
+      grid-column: 1;
+      margin-bottom: 10px;
+    }
   </style>
-  <link rel="stylesheet" href="//at.alicdn.com/t/font_1729448_p2260vejewf.css" />
-  <link rel="stylesheet" href="./styles/reset.css" />
-  <link rel="stylesheet" href="./styles/common.css" />
-  <link rel="stylesheet" href="./styles/pages.css" />
-  <link rel="stylesheet" href="./styles/layout.css" />
 </head>
 
 <body>
@@ -42,7 +85,7 @@
               <h4>使用技术</h4>
               <div class="a-wrapper">
                 <a href="https://github.com/CFCode-git/moneygrubber-test-1">源码链接</a>
-                <a href="https://chow1027.xyz/moneygrubber-1-website/#/money">扫码查看</a>  
+                <a href="https://chow1027.xyz/moneygrubber-1-website/#/money">扫码查看</a>
               </div>
             </div>
             <p>
@@ -74,7 +117,7 @@
               <h4>使用技术</h4>
               <div class="a-wrapper">
                 <a href="https://github.com/CFCode-git/Pomodoro-Technique">源码链接</a>
-                <a href="http://chow1027.xyz/Pomodoro-Technique/">项目预览</a>    
+                <a href="http://chow1027.xyz/Pomodoro-Technique/">项目预览</a>
               </div>
             </div>
             <p>
@@ -104,17 +147,17 @@
         </div>
 
 
-        <div class="timeline-panel">
+        <div class="timeline-panel" id="page2">
           <h3>—— 极简PPT</h3>
           <div class="usedSkill">
             <div class="header">
               <h4>使用技术</h4>
               <div class="a-wrapper">
                 <a href="https://github.com/CFCode-git/OneSlide">源码链接</a>
-                <a href="https://chow1027.xyz/OneSlide/demo.html#/">项目预览</a>    
+                <a href="https://chow1027.xyz/OneSlide/demo.html#/">项目预览</a>
               </div>
             </div>
-         
+
             <p>
               是以reveal.js为基础，使用原生JS添加了一些小功能制作的一款演讲工具。
             </p>
@@ -133,7 +176,7 @@
               </li>
             </ul>
           </div>
-      
+
           <div class="pomodoro">
             <img src="./images/oneSlide1.png" alt="展示效果1" />
             <img src="./images/oneSlide2.png" alt="展示效果2" />
@@ -154,7 +197,7 @@
               <h4>项目概述</h4>
               <div class="a-wrapper">
                 <a href="https://chow1027.xyz/cartoon-pikachu-1/src/test.html">预览地址</a>
-                <a href="https://github.com/CFCode-git/cartoon-pikachu-1">源码链接</a>  
+                <a href="https://github.com/CFCode-git/cartoon-pikachu-1">源码链接</a>
               </div>
             </div>
             <p>
@@ -176,7 +219,7 @@
               <h4>项目概述</h4>
               <div class="a-wrapper">
                 <a href="https://chow1027.xyz/nav-1/dist/index.html">预览地址</a>
-                <a href="https://github.com/CFCode-git/nav-1">源码链接</a>    
+                <a href="https://github.com/CFCode-git/nav-1">源码链接</a>
               </div>
             </div>
             <p>
@@ -192,14 +235,14 @@
 
 
 
-        <div class="timeline-panel">
+        <div class="timeline-panel" id="page3">
           <h3>—— 简易画板</h3>
           <div class="usedSkill">
             <div class="header">
               <h4>项目概述</h4>
               <div class="a-wrapper">
                 <a href="http://chow1027.xyz/canvas-drawingboard/">预览地址</a>
-                <a href="https://github.com/CFCode-git/canvas-drawingboard">源码链接</a>    
+                <a href="https://github.com/CFCode-git/canvas-drawingboard">源码链接</a>
               </div>
             </div>
             <p>
@@ -280,7 +323,7 @@
         </ul>
       </div>
     </section>
-    <section>
+    <section id="page4">
       <span class="iconfont icon-map"></span>
       <h2>技能图谱</h2>
       <hr />

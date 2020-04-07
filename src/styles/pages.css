@@ -91,10 +91,6 @@ section .timeline-panel {
   margin-top: 16px;
 }
 
-/* section .timeline-panel .date {
-  grid-row: 1;
-  grid-column: 1;
-} */
 section .timeline-panel h3 {
   grid-row: 1;
   grid-column: 1 / 5;
@@ -128,12 +124,6 @@ section .timeline-panel .show {
   justify-content: center;
   margin-left: 20px;
 }
-/* 
-section .timeline-panel .show img {
-  /* height: 150px; */
-  /* width: 50%; */
-} 
-*/
 
 section .timeline-panel .show a {
   margin-bottom: 10px;
@@ -210,4 +200,8 @@ section .timeline-panel .usedSkill .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+section.openSource img {
+  width: 80%;
 }
