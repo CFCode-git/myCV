@@ -18,10 +18,6 @@
       margin-top: 20px;
     }
 
-    #page4 {
-      display: none;
-    }
-
     section.project>.detail {
       grid-column: 2 / 4;
     }
@@ -48,17 +44,61 @@
       width: 40%;
     }
 
+    section .lists {
+      display: flex;
+      margin-left: 24px;
+    }
+
+    section .lists .secondList {
+      margin-left: 48px;
+    }
+
     section .education {
       display: grid;
-      grid: auto auto auto / auto;
+      grid: auto / auto auto auto;
       align-items: center;
       margin-top: 16px;
+      margin-left: 24px;
     }
 
     section .education .date {
       grid-row: 1;
       grid-column: 1;
+
+    }
+
+    section .education .school {
+      grid-row: 1;
+      grid-column: 2;
+    }
+
+    section .education .introduction {
+      grid-row: 1;
+      grid-column: 3;
+      color: #666;
       margin-bottom: 10px;
+    }
+
+    .blog>.detail {
+      grid-row: 2;
+      grid-column: 2 / 4;
+      margin-left: 20px;
+    }
+
+    section .blog-wrapper {
+      display: flex;
+    }
+
+    section .blog-wrapper .skill-bar:nth-child(2) {
+      margin-left: 48px;
+    }
+
+    .skills>.detail {
+      grid-column: 2 / 4;
+    }
+
+    section .skill-bar li {
+      margin-top: 4px;
     }
   </style>
 </head>
@@ -246,7 +286,7 @@
               </div>
             </div>
             <p>
-              学习canvas的时候制作的一个小作品。
+              学习Canvas的时候制作的一个小作品。
               目前仅支持画画功能，之后会陆续添加橡皮擦、选色、画笔大小等常用功能。
             </p>
           </div>
@@ -264,29 +304,35 @@
       <h2>基本信息</h2>
       <hr />
       <div class="detail">
-        <div class="icon-list">
-          <span class="iconfont icon-education2"></span>
-          24岁
-        </div>
-        <div class="icon-list">
-          <span class="iconfont icon-phone"></span>
-          18024148185
-        </div>
-        <div class="icon-list">
-          <span class="iconfont icon-wechat"></span>
-          wojiaozhougong
-        </div>
-        <div class="icon-list">
-          <span class="iconfont icon-email"></span>
-          435184766@qq.com
-        </div>
-        <div class="icon-list">
-          <span class="iconfont icon-github"></span>
-          https://github.com/CFCode-git
-        </div>
-        <div class="icon-list">
-          <span class="iconfont icon-blog"></span>
-          https://chow1027.xyz/
+        <div class="lists">
+          <div class="firstList">
+            <div class="icon-list">
+              <span class="iconfont icon-education2"></span>
+              24岁
+            </div>
+            <div class="icon-list">
+              <span class="iconfont icon-phone"></span>
+              18024148185
+            </div>
+            <div class="icon-list">
+              <span class="iconfont icon-wechat"></span>
+              wojiaozhougong
+            </div>
+          </div>
+          <div class="secondList">
+            <div class="icon-list">
+              <span class="iconfont icon-email"></span>
+              435184766@qq.com
+            </div>
+            <div class="icon-list">
+              <span class="iconfont icon-github"></span>
+              https://github.com/CFCode-git
+            </div>
+            <div class="icon-list">
+              <span class="iconfont icon-blog"></span>
+              https://chow1027.xyz/
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -296,11 +342,9 @@
       <hr />
       <div class="detail">
         <div class="timeline-panel education">
-          <div class="date">2014年9月-2018年7月</div>
-          <h3>广东工业大学</h3>
-          <p class="introduction">
-            测绘工程 本科
-          </p>
+          <p class="date">2014 年 9 月 - 2018 年 7 月</p>
+          <p class="school">广东工业大学</p>
+          <p class="introduction">测绘工程 本科</p>
         </div>
       </div>
     </section>
@@ -313,17 +357,57 @@
           <li>熟悉页面制作技巧，能将设计稿完美还原成页面</li>
           <li>熟练使用<strong>HTML5标签</strong>编写语义化的页面</li>
           <li>熟练使用CSS/SCSS，文档流，盒模型，flex布局</li>
-          <li>掌握JavaScript，DOM操作，AJAX，<strong>跨域</strong>，<strong>闭包</strong>，<strong>原型链</strong>，<strong>this</strong>的使用和概念</li>
+          <li>
+            掌握JavaScript，DOM操作，AJAX，<strong>跨域</strong>，<strong>闭包</strong>，<strong>原型链</strong>，<strong>this</strong>的使用和概念
+          </li>
           <li>熟悉<strong>ES6</strong>，包括let/Promise/await/析构赋值等</li>
-          <li>熟悉<strong>前后端分离</strong>技术，包括AJAX，跨域，前端路由，Cookie，Session等</li>
           <li>熟练掌握<strong>Vue全家桶</strong>的使用，包括Vue-cli、VueRouter、Vuex等</li>
           <li>熟练掌握<strong>React全家桶</strong>的使用，包括create-react-app、ReactRouter、Redux等</li>
+          <li>熟悉<strong>前后端分离</strong>技术，包括AJAX，跨域，前端路由，Cookie，Session等</li>
           <li>了解TypeScript，我的项目就是TS实现的</li>
           <li>了解<strong>Webpack的配置和优化</strong></li>
         </ul>
       </div>
     </section>
-    <section id="page4">
+
+
+
+    <section class="blog">
+      <span class="iconfont icon-map"></span>
+      <h2>我的博客</h2>
+      <hr />
+      <div class="detail">
+        <div class="blog-wrapper">
+          <ul class="skill-bar">
+            <li><a href="https://chow1027.xyz/2020/%E9%97%AD%E5%8C%85/">闭包</a></li>
+            <li><a href="https://chow1027.xyz/2019/sync%E4%BF%AE%E9%A5%B0%E7%AC%A6/">如何理解.sync修饰符</a></li>
+            <li><a href="https://chow1027.xyz/2019/vue%E6%95%B0%E6%8D%AE%E5%93%8D%E5%BA%94%E5%BC%8F/">Vue数据响应式</a></li>
+            <li><a href="https://chow1027.xyz/2019/mvc/">MVC：拒绝面条式代码</a></li>
+          </ul>
+          <ul class="skill-bar">
+            <li><a href="https://chow1027.xyz/2019/dom%E4%BA%8B%E4%BB%B6%E7%9B%B8%E5%85%B3/"> DOM事件相关</a></li>
+            <li><a href="https://chow1027.xyz/2019/%E5%B8%B8%E7%94%A8http%E7%8A%B6%E6%80%81%E7%A0%81/">常用Http状态码</a>
+            </li>
+            <li><a
+                href="https://chow1027.xyz/2019/%E8%B0%88%E8%B0%88%E6%B5%8F%E8%A7%88%E5%99%A8%E8%A7%A3%E6%9E%90html%E6%97%B6%E7%9A%84%E9%98%BB%E5%A1%9E%E9%97%AE%E9%A2%98/">谈谈浏览器解析时的阻塞问题</a>
+            </li>
+            <li><a
+                href="https://chow1027.xyz/2019/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/">JS函数的执行时机</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- <section id="page4">
       <span class="iconfont icon-map"></span>
       <h2>技能图谱</h2>
       <hr />
@@ -347,7 +431,7 @@
           </dd>
         </dl>
       </div>
-    </section>
+    </section> -->
   </aside>
   <script src="main.js"></script>
 </body>
