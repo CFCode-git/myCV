@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  margin-left: 1em;
+}
+li {
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #999;
+  font-weight: 500;
+  font-size: 1.1em;
+  border-bottom: 1px solid #999;
+}
