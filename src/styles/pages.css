@@ -69,6 +69,12 @@ section .icon-list .iconfont {
   margin-right: 10px;
 }
 
+section .icon-list a {
+  /* color: inherit; */
+  text-decoration: none;
+  /* border: none; */
+}
+
 section .skill-bar li {
   margin-top: 8px;
 }
