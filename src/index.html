@@ -146,7 +146,7 @@
               <li>
                 使用<strong>Vuex+LocalStorage</strong>实现状态管理，将记账信息和标签信息存储在<strong>LocalStorage</strong>中。
               </li>
-              <li>源码几乎完全使用TypeScript实现，用到了装饰器语法。</li>
+              <li>源码几乎完全使用TypeScript实现，用到了<strong>装饰器</strong>语法。</li>
           </div>
           <div class="show">
             <img src="./images/gitee_qrcode2.png" alt="扫一扫二维码直达体验!" />
@@ -176,12 +176,12 @@
               </li>
               <li>使用<strong>React Router + axios</strong>实现注册/登录/跳转页面的功能，采用了Ant Design设计。</li>
               <li>
-                使用SVG绘制折线图，dayjs处理日期，lodash处理数据。
+                使用SVG绘制折线图，<strong>dayjs</strong>处理日期，<strong>lodash</strong>处理数据。
               </li>
               <li>
                 在倒计时功能模块上实践了<strong>Hooks API</strong>。
               </li>
-              <li>详细的历史记录，并可对记录进行修改，恢复和删除。</li>
+              <li id="page2">详细的历史记录，并可对记录进行修改，恢复和删除。</li>
               <li>目前移动端的页面正在逐步开发中。</li>
             </ul>
           </div>
@@ -192,7 +192,7 @@
         </div>
 
 
-        <div class="timeline-panel" id="page2">
+        <div class="timeline-panel">
           <h3>—— Miraculous PPT</h3>
           <div class="usedSkill">
             <div class="header">
@@ -246,7 +246,7 @@
               </div>
             </div>
             <p>
-              学习CSS3的时候做的一个小作品。使用了CSS3新特性transition和transform添加淡入效果，适配移动端。
+              通过动态向style标签添加样式实现哆啦A梦的绘制效果。用到了CSS3的新特性<strong>transition</strong>和<strong>transform</strong>添加淡入效果，适配移动端。
             </p>
           </div>
           <div class="detail">
@@ -257,7 +257,7 @@
           </div>
         </div>
 
-        <div class="timeline-panel">
+        <div class="timeline-panel" id="page3">
           <h3>—— 前端导航网站</h3>
           <div class="usedSkill">
             <div class="header">
@@ -268,8 +268,8 @@
               </div>
             </div>
             <p>
-              学习使用jQuery的时候制作的导航网站。
-              添加网址时获取首字母到快捷方式，敲击快捷方式对应的字母前往对应的网址。
+              使用了<strong>jQuery</strong>制作的导航网站。
+              添加网址时获取首字母到快捷方式，敲击快捷方式对应的字母即可前往对应的网址。
             </p>
           </div>
           <div class="pomodoro">
@@ -277,7 +277,7 @@
           </div>
         </div>
 
-        <div class="timeline-panel" id="page3">
+        <div class="timeline-panel">
           <h3>—— 简易画板</h3>
           <div class="usedSkill">
             <div class="header">
@@ -288,7 +288,7 @@
               </div>
             </div>
             <p>
-              学习Canvas的时候制作的一个小作品。
+              使用<strong>Canvas</strong>以及原生JS制作的一个小作品。
               目前仅支持画画功能，之后会陆续添加橡皮擦、选色、画笔大小等常用功能。
             </p>
           </div>
@@ -300,7 +300,7 @@
       </div>
     </section>
   </main>
-  <aside>
+  <aside class="personalMessage">
     <section>
       <span class="iconfont icon-message"></span>
       <h2>基本信息</h2>
@@ -350,12 +350,14 @@
         </div>
       </div>
     </section>
+  </aside>
+  <aside class="otherMessage">
     <section class="skills">
       <span class="iconfont icon-skills"></span>
       <h2>掌握技能</h2>
       <hr />
       <div class="detail">
-        <ul>
+        <ul class="skill-bar">
           <li>熟悉页面制作技巧，能将设计稿完美还原成页面</li>
           <li>熟练使用<strong>HTML5标签</strong>编写语义化的页面</li>
           <li>熟练使用CSS/SCSS，文档流，盒模型，flex布局</li>
@@ -397,32 +399,6 @@
         </div>
       </div>
     </section>
-
-    <!-- <section id="page4">
-      <span class="iconfont icon-map"></span>
-      <h2>技能图谱</h2>
-      <hr />
-      <div class="detail">
-        <dl class="skill-bar">
-          <dt>JavaScript</dt>
-          <dd>
-            <div style="width:80%"></div>
-          </dd>
-          <dt>CSS3</dt>
-          <dd>
-            <div style="width:70%"></div>
-          </dd>
-          <dt>Vue</dt>
-          <dd>
-            <div style="width:75%"></div>
-          </dd>
-          <dt>React</dt>
-          <dd>
-            <div style="width:70%"></div>
-          </dd>
-        </dl>
-      </div>
-    </section> -->
   </aside>
   <script src="main.js"></script>
 </body>

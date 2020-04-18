@@ -3,7 +3,7 @@
 }
 body {
   display: grid;
-  grid: auto auto / 1fr 300px 700px 1fr;
+  grid: auto 410px auto / 1fr 300px 700px 1fr;
 }
 
 header {
@@ -13,15 +13,21 @@ header {
 
 main {
   grid-column: 3;
-  grid-row: 2;
+  grid-row: 2/4;
 }
 
-aside {
+aside.personalMessage {
   grid-column: 2 / 3;
   grid-row: 2;
 }
-img{
-  width:50%;
+
+aside.otherMessage {
+  grid-column: 2 / 3;
+  grid-row: 3;
+}
+
+img {
+  width: 50%;
 }
 
 /* @media (max-width: 768px) {
@@ -32,7 +38,7 @@ img{
 
 @media (max-width: 1000px) {
   body {
-    grid: auto auto auto / 1fr;
+    grid: auto auto auto auto / 1fr;
     padding: 0 10px 30px 10px;
   }
   header {
@@ -40,15 +46,21 @@ img{
     grid-row: 1;
   }
   main {
-    grid-column: 1;·
-    grid-row: 2;
-  }
-  aside {
     grid-column: 1;
     grid-row: 3;
   }
-  img{
-    width:50%;
+  aside.personalMessage {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  aside.otherMessage {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  img {
+    width: 40%;
   }
   section.project > .detail {
     grid-column: 1 / 4;
@@ -57,27 +69,27 @@ img{
   section.openSource > .detail {
     grid-column: 1 / 4;
   }
- 
+
   section .timeline-panel {
     display: grid;
-    grid: auto auto auto auto / 120px  auto;
+    grid: auto auto auto auto / 120px auto;
     align-items: center;
     margin-top: 16px;
   }
 
-  section .timeline-panel .show img{
-    width:100%;
+  section .timeline-panel .show img {
+    width: 100%;
   }
 
-  section .timeline-panel .pomodoro{
+  section .timeline-panel .pomodoro {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  section .timeline-panel .pomodoro img{
-    width:100%;
+  section .timeline-panel .pomodoro img {
+    width: 100%;
   }
   section .education {
     display: grid;
@@ -85,12 +97,10 @@ img{
     align-items: center;
     margin-top: 16px;
   }
-  
+
   section .education .date {
     grid-row: 1;
     grid-column: 1;
     margin-bottom: 10px;
   }
-
 }
-
