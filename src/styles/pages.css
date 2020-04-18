@@ -191,6 +191,12 @@ section .education .introduction {
   margin-left: 20px;
 }
 
+.works > .detail {
+  grid-row: 2;
+  grid-column: 1 / 4;
+  margin-left: 20px;
+}
+
 section .timeline-panel .usedSkill h4 {
   grid-row: 2;
   grid-column: 1 / 4;
